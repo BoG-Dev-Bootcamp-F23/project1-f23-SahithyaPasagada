@@ -1,26 +1,36 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Mini Pokedex</title>
+        <title>Pokedex</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     </head>
     <body>
-        <h1 class="page-header">Bits of Good Mid-Semester Project</h1>
+        <h1>Bits of Good Mid-Semester Project</h1>
         <div class="container">
-            <div class="left-container">
-                <img src ="" id ="image">
+            <div class="left">
+                <img src="" id="image">
                 <h2 id="name"></h2>
                 <h3>Types:</h3>
-                <div id="pokemon-type-container"></div>
-                <div id="arrows-container">
-                    <button id="left-arrow" onclick="clickLeft()"><img src="./imgs/left-arrow.png"></button>
-                    <button id="right-arrow" onclick="clickRight()"><img src="./imgs/right-arrow.png"></button>
+                <div class="left-buttons">
+                    <button id="leftArrow"><img src="./imgs/left-arrow.png" /> </button>
+                    <button id="rightArrow"><img src="./imgs/right-arrow.png" /></button>
                 </div>
             </div>
+            <div class="right">
+                <h2>Info</h2>
+                <ul id="info"></ul>
+                <ul id="moves"></ul>
+                <div class="right-buttons">
+                    <button id="infoButton"></button>
+                    <button id="rightButton"></button>
+                </div>
+            </div>
+        </div>  
 
-
-        </div>
         <script src="script.js"></script>
     </body>
     
 </html>
+

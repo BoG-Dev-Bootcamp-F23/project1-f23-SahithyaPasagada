@@ -21,11 +21,7 @@ function showImage(pokemonImage) {
 
 function showMoves(pokemonMoves) {
   let moves = [];
-  pokemonMoves.forEach(move => {
-    moves.push(move.move.name);
-  });
-
-  
+  for e
 }
 
 
