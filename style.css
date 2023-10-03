@@ -110,6 +110,7 @@ ul {
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
+    border: 0px;
 }
 
 .right-buttons {
@@ -125,7 +126,6 @@ ul {
     width: 100px;
     height: 40px;
     border-radius: 10px;
-    border: none;
 }
 
 #infoButton {
