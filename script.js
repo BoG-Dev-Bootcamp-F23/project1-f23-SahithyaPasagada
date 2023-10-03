@@ -1,10 +1,9 @@
 let id = 1;
+movesHidden = true;
 
 async function getPokemonData() {
   const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
   const data = await response.json();
-  //console.log(data);
-  //console.log(data.stats)
   const pokemonName = data.name;
   const pokemonImage = data.sprites.front_default;
   const pokemonTypes = data.types;
@@ -17,6 +16,12 @@ async function getPokemonData() {
   showTypes(pokemonTypes);
   showInfo(pokemonStats, pokemonHeight, pokemonWeight);
   showMoves(pokemonMoves);
+
+  if (movesHidden) {
+    infoClick();
+  } else {
+    movesClick();
+  }
  
 }
 
@@ -56,7 +61,44 @@ function showInfo(pokemonStats, pokemonHeight, pokemonWeight) {
 }
 
 function showMoves(pokemonMoves) {
+  let pokemonMoveData = document.getElementById("moves")
+  let content = "";
+  for (const elt of pokemonMoves) {
+    content += `<p>${elt["move"]["name"]}</p>`;
+  }
+  pokemonMoveData.innerHTML = content;
+}
 
+function leftArrowClick() {
+  if (id > 1) {
+      id--;
+      getPokemonData();
+  }
+}
+
+function rightArrowClick() {
+  if (id <= 2000) {
+      id++;
+      getPokemonData();
+  }
+}
+
+function infoClick() {
+  document.getElementById("moves").hidden = true;
+  document.getElementById("info").hidden = false;
+  document.getElementById("title").innerHTML = "Info";
+  document.getElementById("infoButton").style.backgroundColor = "#7CFF79";
+  document.getElementById("movesButton").style.backgroundColor = "#E8E8E8";
+  movesHidden = true;
+}
+
+function movesClick() {
+  document.getElementById("moves").hidden = false;
+  document.getElementById("info").hidden = true;
+  document.getElementById("title").innerHTML = "Moves";
+  document.getElementById("movesButton").style.backgroundColor = "#7CFF79";
+  document.getElementById("infoButton").style.backgroundColor = "#E8E8E8";
+  movesHidden = false;
 }
 
 getPokemonData();
