@@ -19,10 +19,18 @@ h2 {
     margin: 0px;
 }
 
-h3 {
+#title {
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 20px;
+    text-align: center;
+    margin: -20px;
+}
+
+h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
     margin-bottom: 0px;
 }
 
@@ -37,16 +45,16 @@ ul {
     font-weight: 400;
     font-size: 20px;
     background-color: #E8E8E8;
-    width: 270px;
+    width: 290px;
     height: 350px;
 }
 
 #moves {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     background-color: #E8E8E8;
-    width: 270px;
+    width: 290px;
     height: 350px;
 }
 
@@ -62,29 +70,185 @@ ul {
     border: 1px solid black;
     border-radius: 10px;
     background-color: #E8E8E8;
-    height: 70px;
+    height: 35px;
     width: 340px;
     font-weight: 300;
     font-size: 25px;
     padding: 10px;
 }
 
+#types {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
 .left {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    /*background-color: yellow;*/
     margin-right: 70px;
 }
 
 .right {
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    /*background-color: pink;*/
     margin-left: 70px;
+}
+
+.left-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 70px;
+}
+
+.right-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 8px;
 }
 
 .left-buttons img {
     width: 100px;
     height: 40px;
+}
+
+#infoButton {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    width: 130px;
+    height: 50px;
+}
+
+#movesButton {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    width: 130px;
+    height: 50px;
+}
+
+
+#normal {
+    border: 0.1px solid #A8A77A;
+    border-radius: 10px;
+    background-color: #A8A77A;
+}
+
+#fire {
+    border: 0.1px solid #EE8130;
+    border-radius: 10px;
+    background-color: #EE8130;
+}
+
+#water {
+    border: 0.1px solid #6390F0;
+    border-radius: 10px;
+    background-color: #6390F0;
+}
+
+#electric {
+    border: 0.1px solid #F7D02C;
+    border-radius: 10px;
+    background-color: #F7D02C;
+}
+
+#grass {
+    border: 0.1px solid #7AC74C;
+    border-radius: 10px;
+    background-color: #7AC74C;
+}
+
+#ice {
+    border: 0.1px solid #96D9D6;
+    border-radius: 10px;
+    background-color: #96D9D6;
+}
+
+#fighting {
+    border: 0.1px solid #C22E28;
+    border-radius: 10px;
+    background-color: #C22E28;
+}
+
+#poison {
+    border: 0.1px solid #A33EA1;
+    border-radius: 10px;
+    background-color: #A33EA1;
+}
+
+#ground {
+    border: 0.1px solid #E2BF65;
+    border-radius: 10px;
+    background-color: #E2BF65;
+}
+
+#flying {
+    border: 0.1px solid #A98FF3;
+    border-radius: 10px;
+    background-color: #A98FF3;
+}
+
+#psychic {
+    border: 0.1px solid #F95587;
+    border-radius: 10px;
+    background-color: #F95587;
+}
+
+#bug {
+    border: 0.1px solid #A6B91A;
+    border-radius: 10px;
+    background-color: #A6B91A;
+}
+
+#rock {
+    border: 0.1px solid #B6A136;
+    border-radius: 10px;
+    background-color: #B6A136;
+}
+
+#ghost {
+    border: 0.1px solid #735797;
+    border-radius: 10px;
+    background-color: #735797;
+}
+
+#dragon {
+    border: 0.1px solid #6F35FC;
+    border-radius: 10px;
+    background-color: #6F35FC;
+}
+
+#dark {
+    border: 0.1px solid #705746;
+    border-radius: 10px;
+    background-color: #705746;
+}
+
+#steel {
+    border: 0.1px solid #B7B7CE;
+    border-radius: 10px;
+    background-color: #B7B7CE;
+}
+
+#fairy {
+    border: 0.1px solid #D685AD;
+    border-radius: 10px;
+    background-color: #D685AD;
 }
 
