@@ -63,8 +63,14 @@ function showInfo(pokemonStats, pokemonHeight, pokemonWeight) {
 function showMoves(pokemonMoves) {
   let pokemonMoveData = document.getElementById("moves")
   let content = "";
+  let count = 0;
+
   for (const elt of pokemonMoves) {
     content += `<p>${elt["move"]["name"]}</p>`;
+    count++;
+    if (count == 10) {
+      break;
+    }
   }
   pokemonMoveData.innerHTML = content;
 }
